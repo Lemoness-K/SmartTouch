@@ -1,0 +1,393 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".NaviMain" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4ad99c"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:text="SmartTouch"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/view_border"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/applist_title_mainapp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView_appTitle"
+                        android:layout_width="245dp"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:text="앱등록"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_EditApp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView_appTitle"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/textView_appTitle"
+                        android:background="@drawable/btn_appstart_up"
+                        android:textColor="#ffffff"
+                        android:text="Edit"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_app_contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/applist_seperate"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="5dp" >
+
+                        <ImageView
+                            android:id="@+id/imageView_navi_icon"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/icon_navi" />
+
+                        <TextView
+                            android:id="@+id/textView_navi_name"
+                            android:layout_width="175dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@+id/imageView_navi_icon"
+                            android:text="등록된 앱이 없음"
+                            android:textSize="16dp" />
+
+                        <Button
+                            android:id="@+id/btn_play_navi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/textView_navi_name"
+                            android:background="@drawable/btn_appstart_up"
+                            android:textColor="#ffffff"
+                            android:text="실행" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp" >
+
+                        <ImageView
+                            android:id="@+id/imageView_music_icon"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_music" />
+
+                        <TextView
+                            android:id="@+id/textView_music_name"
+                            android:layout_width="175dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@+id/imageView_music_icon"
+                            android:text="등록된 앱이 없음"
+                            android:textSize="16dp" />
+
+                        <Button
+                            android:id="@+id/btn_play_music"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/textView_music_name"
+                            android:background="@drawable/btn_appstart_up"
+                            android:textColor="#ffffff"
+                            android:text="실행" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/view_border"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/applist_title_mainapp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView_callTitle"
+                        android:layout_width="245dp"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:text="전화등록"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_setting_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView_callTitle"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/textView_callTitle"
+                        android:background="@drawable/btn_appstart_up"
+                        android:textColor="#ffffff"
+                        android:text="Edit"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/applist_seperate"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView_callName1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="이름없음"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView_callPhone1"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/textView_callName1"
+                        android:text="번호없음"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_call1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/textView_callPhone1"
+                        android:background="@drawable/btn_appstart_up"
+                        android:textColor="#ffffff"
+                        android:text="실행" />
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/applist_seperate"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView_callName2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="이름없음"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView_callPhone2"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/textView_callName2"
+                        android:text="번호없음"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_call2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/textView_callPhone2"
+                        android:background="@drawable/btn_appstart_up"
+                        android:textColor="#ffffff"
+                        android:text="실행" />
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/applist_seperate"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView_callName3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="이름없음"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView_callPhone3"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/textView_callName3"
+                        
+                        android:text="번호없음"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_call3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/textView_callPhone3"
+                        android:background="@drawable/btn_appstart_up"
+                        android:textColor="#ffffff"
+                        android:text="실행" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView_callName4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="이름없음"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView_callPhone4"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/textView_callName4"
+                        
+                        android:text="번호없음"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_call4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/textView_callPhone4"
+                        android:background="@drawable/btn_appstart_up"
+                            android:textColor="#ffffff"
+                        android:text="실행" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/linear_bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/view_border"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/applist_title_mainapp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView_bluetoothTitle"
+                        android:layout_width="245dp"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:text="블루투스"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_set_bluetooth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView_bluetoothTitle"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/textView_bluetoothTitle"
+                        android:background="@drawable/btn_appstart_up"
+                        android:textColor="#ffffff"
+                        android:text="실행"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

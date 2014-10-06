@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_border"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="전화등록"
+        android:textColor="#33B5E5"
+        android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >        
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="첫번째 연락처 :"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_call1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/title1"
+                android:layout_toRightOf="@+id/title1"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="두번째 연락처 :"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_call2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/title2"
+                android:layout_toRightOf="@+id/title2"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="세번째 연락처 :"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_call3"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/title3"
+                android:layout_toRightOf="@+id/title3"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" 
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="네번째 연락처 :"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_call4"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/title4"
+                android:layout_toRightOf="@+id/title4"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    
+
+</LinearLayout>
