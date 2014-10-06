@@ -1,0 +1,7 @@
+#delete
+res/wgt/SimpleSAPConsumer2.zip
+#add
+res/wgt/ALZ3944.tmp
+#modify
+res/wgt/author-signature.xml
+res/wgt/signature1.xml

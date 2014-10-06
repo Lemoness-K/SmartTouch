@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    android:background="#EEEEEEEE" >
+
+    <RelativeLayout
+        android:id="@+id/MapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@android:color/white"
+        android:layout_margin="10dp" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3" >
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_appstart_up"
+            android:textColor="#ffffff"
+            android:text="집으로" />
+
+        <Button
+            android:id="@+id/comp_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/home_button"
+            android:layout_alignBottom="@+id/home_button"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_appstart_up"
+            android:textColor="#ffffff"
+            android:text="회사로" />
+
+        <Button
+            android:id="@+id/freq_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_appstart_up"
+            android:textColor="#ffffff"
+            android:text="즐겨찾기" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+        >
+
+    <LinearLayout
+        android:id="@+id/linear_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"        
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="네비게이션" 
+            android:background="@drawable/applist_title_navi"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            />
+
+        <ListView
+            android:id="@+id/list_navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/view_border"
+            android:paddingBottom="5dp"
+            android:choiceMode="singleChoice"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="음악" 
+            android:background="@drawable/applist_title_music"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            />
+
+        <ListView
+            android:id="@+id/list_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/view_border"
+            android:paddingBottom="5dp"
+            android:choiceMode="singleChoice"
+            />
+        
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        >
+	    <Button
+	       android:id="@+id/btn_AppListOK"
+	       android:layout_width="match_parent"
+	       android:layout_height="50dp"
+	       android:layout_marginLeft="15dp"
+	       android:layout_marginRight="15dp"
+	       android:background="#6495ed"
+	       android:gravity="center"
+	       android:text="확인"
+	       android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>
